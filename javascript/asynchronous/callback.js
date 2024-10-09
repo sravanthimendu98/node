@@ -46,7 +46,7 @@ fetchDataAsyn(() => {
 
 function fetchData(callback) {
   setTimeout(() => {
-    const error = false; // Change to true to simulate an error
+    const error = false; 
     if (error) {
       callback('Error occurred', null);
     } else {
