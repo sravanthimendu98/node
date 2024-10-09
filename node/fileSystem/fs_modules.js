@@ -1,4 +1,4 @@
-import { readFile, appendFile, open, writeFile, unlink, rename } from 'fs';
+import { readFile, appendFile, open, writeFile, rename , unlink} from 'fs';
 import { createServer } from 'http';
  
 createServer(
@@ -31,16 +31,16 @@ createServer(
         });
  
         // method deletes the specified file.
-        unlink('openFile.txt', function (err) {
-            if (err) throw err;
-            console.log('File deleted!');
-        });
+        // unlink('files/openFile.txt', function (err) {
+        //     if (err) throw err;
+        //     console.log('File deleted!');
+        // });
  
         // renames the existing file name
-        rename('openFile.txt', 'myrenamedfile.txt', function (err) {
-            if (err) throw err;
-            console.log('File Renamed!');
-        });
+        // rename('files/openFile.txt', 'myrenamedfile.txt', function (err) {
+        //     if (err) throw err;
+        //     console.log('File Renamed!');
+        // });
     }
 ).listen(8080, console.log('server started!'));
  
